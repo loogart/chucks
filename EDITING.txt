@@ -45,3 +45,13 @@ PUBLISH
 Upload the contents of this folder to a static host.
 Keep index.html at the root and retain the assets/ and vendor/ folders.
 Bootstrap CSS and JavaScript are included locally in vendor/bootstrap/.
+
+SOCIAL PREVIEW & ICONS
+assets/og-chucks.jpg is the 1200 x 630 Open Graph / social preview.
+assets/favicon.svg is the simplified chef-head browser icon.
+favicon.ico and favicon-16.png / favicon-32.png provide older-browser fallbacks.
+assets/apple-touch-icon.png is the opaque 180 x 180 iPhone/iPad web clip.
+assets/icon-192.png and icon-512.png are home-screen app icons.
+site.webmanifest sets the app name and brand colours.
+The head of index.html contains the social metadata and icon links.
+When changing domains, update the canonical, og:url and absolute social image URLs.
