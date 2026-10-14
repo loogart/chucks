@@ -1,0 +1,47 @@
+CHUCK’S — EDITING GUIDE
+
+This is a plain HTML website built with Bootstrap 5.3.8.
+No npm installation, framework or build step is required.
+
+OPEN IT
+Unzip the folder and open index.html in your browser.
+For a local web preview, run this command from the folder:
+  python3 -m http.server 4173
+Then visit http://localhost:4173.
+
+EDIT CONTENT
+index.html contains all page text, links, menu items, hours and contact details.
+Each section has an HTML comment to help you find it.
+Menu names and descriptions are ordinary <h3> and <p> elements.
+To add a menu item, copy a neighbouring <div class="col-12"> menu block.
+Update the menu-number span to keep the numbered list in order.
+The menu category buttons and panel IDs must keep matching identifiers.
+The footer contains the Made by Loogart link.
+
+EDIT STYLE
+style.css contains the Chuck’s theme in numbered sections.
+Change the --chuck-red, --chuck-ink and --chuck-paper variables at the top
+for global colour changes. fonts.css contains the local font declarations.
+Responsive columns use Bootstrap’s container, row and col-* classes.
+Bootstrap documentation: https://getbootstrap.com/docs/5.3/
+
+EDIT INTERACTIONS
+Bootstrap handles the navbar, menu tabs and FAQ accordion.
+script.js contains only the full-menu view, navbar close behaviour,
+automatic reduced-motion preferences, viewport reveals and copyright year.
+Reveal timing is in section 10 of style.css; reveal targets are at the end of script.js.
+
+ARTWORK
+assets/chef-animated.svg is the self-contained, looping SVG mascot.
+assets/chef-still.svg is the matching still image with the new hand.
+The -footer.svg variants use white burger buns on the red footer.
+assets/chef-original.svg is the unchanged original artwork.
+assets/chef-hover.svg animates the header logo on hover or focus.
+The editable motion generator is included as tools/rig-chef.py.
+From this folder, run: python3 tools/rig-chef.py
+The motion script does not require third-party Python packages.
+
+PUBLISH
+Upload the contents of this folder to a static host.
+Keep index.html at the root and retain the assets/ and vendor/ folders.
+Bootstrap CSS and JavaScript are included locally in vendor/bootstrap/.
