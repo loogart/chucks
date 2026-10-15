@@ -1,27 +1,25 @@
-# Chuck’s casse-croûte
+# Chuck × Loogart — Bon appétit!
 
-A one-page restaurant website built with Bootstrap 5.3.8, original Chuck’s artwork, and lightweight SVG and viewport animation.
+A standalone red mascot page with the original Chuck artwork, planted feet, a burger-toss loop, and a connected SVG speech bubble. The button leads to https://loogart.com/.
 
 Live site: https://loogart.github.io/chucks/
 
 ## Edit and preview
 
-All menu items, hours, contact details and links are ordinary HTML in `index.html`. Branding is in `style.css`; interactions are in `script.js`. Bootstrap and fonts are bundled locally. No installation or build step is needed.
+`index.html` is the published homepage. `bon-appetit.html` is the identical standalone page at its own URL. Both include their fonts, styling and animated SVG, so either file also works by itself offline. Keep these two files in sync after editing.
 
 ```sh
 python3 -m http.server 4173
 ```
 
-Open http://localhost:4173. See `EDITING.txt` for the full editing guide.
+Open http://localhost:4173. The headline, button label and destination are near the start of the body. Speech-bubble geometry is a single SVG path. Reduced-motion preferences show a static mascot and speech bubble.
 
-## Artwork and motion
-
-The character SVGs are in `assets/`. `tools/rig-chef.py` regenerates the animated and static mascot variants. The footer version has white burger buns and a viewBox aligned to the character’s soles. The header logo animates on hover and keyboard focus. Reduced-motion preferences are respected.
+The earlier Bootstrap restaurant website remains in Git history; existing supporting assets are retained in this repository.
 
 ## Publish
 
-GitHub Pages can publish directly from the `main` branch, root folder. `.nojekyll` keeps this a plain static site. Future commits to `main` update the live site.
+GitHub Pages publishes from the `main` branch, root folder. `.nojekyll` keeps this a plain static site. Commits to `main` update the live page.
 
 ## Credits
 
-Logo and website design: [Loogart](https://loogart.com). Restaurant content and photos: Chuck’s casse-croûte. Bootstrap retains its bundled MIT license in `vendor/bootstrap/LICENSE.txt`.
+Original logo, mascot and website design: [Loogart](https://loogart.com).
