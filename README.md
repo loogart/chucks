@@ -1,6 +1,6 @@
 # Chuck × Loogart — Bon appétit!
 
-A standalone red mascot page with the original Chuck artwork, planted feet, a burger-toss loop, and a connected SVG speech bubble. The button leads to https://loogart.com/.
+A standalone red mascot page with the original Chuck artwork, planted feet, a burger-toss loop, and an unboxed greeting above the mascot. The button leads to https://loogart.com/.
 
 Live site: https://loogart.github.io/chucks/
 
@@ -12,7 +12,7 @@ Live site: https://loogart.github.io/chucks/
 python3 -m http.server 4173
 ```
 
-Open http://localhost:4173. The headline, button label and destination are near the start of the body. Speech-bubble geometry is a single SVG path. Reduced-motion preferences show a static mascot and speech bubble.
+Open http://localhost:4173. The headline, button label and destination are near the start of the body. The button arrow is inline SVG; the greeting is plain text. Reduced-motion preferences show a static mascot and greeting.
 
 The earlier Bootstrap restaurant website remains in Git history; existing supporting assets are retained in this repository.
 
